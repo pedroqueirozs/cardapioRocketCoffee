@@ -52,9 +52,30 @@ ul li{
 
 li .details , h3{
     font-family: 'Merriweather', serif;
-    max-width:240px ;
+    min-width:240px ;
     font-size:17px;
 }
 li .details, p {
     line-height: 29px;
 }
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+select,input,textarea,button{
+    padding: 6px;
+    margin-top: 10px;
+}
+button:hover,input:hover,textarea:hover{
+    background-color:#F4C37F;
+
+}
+label{
+    color: #664f2f;;
+position: relative;
+flex-direction: column;
+display: block;
+}
+
+
