@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+
+    <!-- CONFIG DO MODAL -->
+    
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="./js/index.js"></script>
+    <script
+      src="./js/index.js
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+
+
+    <!-- FIM CONFIG MODAL-->
+
+
+    <title>ROCKET COFFEE</title>
+  </head>
+
+  <header>
+    <h1>ROCKET <span>COFFEE</span></h1>
+    <p>Aberto todos os dias 8h-21h</p>
+  </header>
+  <body>
+
+     <!-- INICIANDO O HTML DO MODAL -->
+     
+     <section>
+
+     <button
+     type="button"
+     class="btn btn-primary"
+     data-bs-toggle="modal"
+     data-bs-target="#exampleModal"
+   >
+     Adicionar produto
+   </button>
+   <!-- fim  do botao modal  -->
+
+   <!-- body Modal -->
+   <div
+     class="modal fade"
+     id="exampleModal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="false"
+   >
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5
+             class="modal-title"
+             id="exampleModalLabel"
+             style="color: #f4c37f"
+           >
+             Informações do produto
+           </h5>
+
+           <button
+             type="button"
+             class="btn-close"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+           ></button>
+         </div>
+
+          <form id="form">
+            <select name="type" id="select">
+              <option value="listBebidas">Bebidas</option>
+              <option value="adicionarBolo">Bolos</option>
+            </select>
+            <input id="nome" value="" type="text" name="name" placeholder="Nome" />
+            <textarea
+              id="textarea"
+              name="description"
+              placeholder="Descrição do produto"
+            ></textarea>
+            <input id="preco" type="number" name="price" placeholder="Preço" />
+
+            <button
+             type="button"
+             class="btn btn-secondary"
+             data-bs-dismiss="modal"
+           >
+             Fechar
+           </button>
+           <button type="submit" class="btn btn-primary">Salvar</button>
+          </form>
+  </section>
+<!-- FIM DO HTML MODAL -->
+    <section>
+      <h2>BEBIDAS</h2>
+      <ul id="listBebidas">
+        <li>
+          <div clss="details">
+            <h3>CAFÉ EXPRESSO</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <strong class="price"> R$ 4,00 </strong>
+        </li>
+
+        <li>
+          <div clss="details">
+            <h3>CAPPUCCINO</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <strong class="price"> R$ 2,00 </strong>
+        </li>
+
+        <li>
+          <div clss="details">
+            <h3>LEITE</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <strong class="price"> R$ 5,00 </strong>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>BOLOS</h2>
+      <ul id="adicionarBolo">
+        <li>
+          <div clss="details">
+            <h3>BOLO DE SENOURA</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <strong class="price"> R$ 10,00 </strong>
+        </li>
+
+        <li>
+          <div clss="details">
+            <h3>BOLO NO POTE</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <strong class="price"> R$ 7,00 </strong>
+        </li>
+
+        <li>
+          <div clss="details">
+            <h3>BOLO DE FUBA</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <strong class="price"> R$ 5,00 </strong>
+        </li>
+      </ul>
+    </section>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
